@@ -2,7 +2,7 @@ PODS:
   - CocoaLumberjack/Core (3.6.1)
   - CocoaLumberjack/Swift (3.6.1):
     - CocoaLumberjack/Core
-  - fanthus_base_lib (0.1.0):
+  - fanthus_base_lib (0.0.2):
     - CocoaLumberjack/Swift
     - HexColors
     - SnapKit
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
-  fanthus_base_lib: ade21659d2db6e00277567d999f2d9884be78109
+  fanthus_base_lib: f18b121dcf3e24f5783f7a13e5d979e16354b87d
   HexColors: f8c66339541a74bb08905bfe7cd4f8cc85e9e173
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455

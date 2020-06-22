@@ -345,7 +345,7 @@ public class EZUI:NSObject {
         let keyFrame = CAKeyframeAnimation(keyPath: "transform.scale")
         keyFrame.duration = 0.3
         keyFrame.values = [0.1, 0.2, 0.3, 0.5, 0.8, 1.3, 1.0]
-        keyFrame.calculationMode = kCAAnimationCubic
+        keyFrame.calculationMode = CAAnimationCalculationMode.cubic
         view.layer.add(keyFrame, forKey: "scale")
     }
     
@@ -506,8 +506,8 @@ extension EZUI {
         layer.fillColor = UIColor.clear.cgColor
         layer.strokeColor = lineColor.cgColor
         layer.lineWidth = lineWidth
-        layer.lineJoin = kCALineJoinRound
-        layer.lineCap = kCALineCapRound
+        layer.lineJoin = .round
+        layer.lineCap = .round
         layer.lineDashPattern = [lineLength, lineSpacing] as [NSNumber]
         
         let path = UIBezierPath()

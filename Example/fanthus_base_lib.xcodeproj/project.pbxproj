@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29C6B0707AB2033A6B6ED73F /* Pods_fanthus_base_lib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9013CE0BA02159CA576FB76 /* Pods_fanthus_base_lib_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		E1C757ADA7337C6DF8CEE605 /* Pods_fanthus_base_lib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F549C417CD1603F9253253D2 /* Pods_fanthus_base_lib_Example.framework */; };
 		F5AC5AB524A0F93200FE1F5D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = F5AC5AB124A0F93200FE1F5D /* .gitkeep */; };
 		F5AC5AC524A0F94900FE1F5D /* CoreGraphicsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AB924A0F94900FE1F5D /* CoreGraphicsUtils.swift */; };
 		F5AC5AC624A0F94900FE1F5D /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5ABA24A0F94900FE1F5D /* LogUtils.swift */; };
@@ -66,8 +66,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B0F770177AE589FF44F5D84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B83019E6A8D662942FC85884 /* fanthus_base_lib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = fanthus_base_lib.podspec; path = ../fanthus_base_lib.podspec; sourceTree = "<group>"; };
-		E9013CE0BA02159CA576FB76 /* Pods_fanthus_base_lib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanthus_base_lib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8273D54A4ADBCACD0B52D7 /* Pods-fanthus_base_lib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanthus_base_lib_Example.debug.xcconfig"; path = "Target Support Files/Pods-fanthus_base_lib_Example/Pods-fanthus_base_lib_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F549C417CD1603F9253253D2 /* Pods_fanthus_base_lib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanthus_base_lib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AC5AB124A0F93200FE1F5D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		F5AC5AB924A0F94900FE1F5D /* CoreGraphicsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsUtils.swift; sourceTree = "<group>"; };
 		F5AC5ABA24A0F94900FE1F5D /* LogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C6B0707AB2033A6B6ED73F /* Pods_fanthus_base_lib_Example.framework in Frameworks */,
+				E1C757ADA7337C6DF8CEE605 /* Pods_fanthus_base_lib_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +185,7 @@
 		E09F607159F84EEB4B617F44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9013CE0BA02159CA576FB76 /* Pods_fanthus_base_lib_Example.framework */,
+				F549C417CD1603F9253253D2 /* Pods_fanthus_base_lib_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -561,7 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -578,7 +578,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
