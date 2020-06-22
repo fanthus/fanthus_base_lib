@@ -3,9 +3,13 @@ use_frameworks!
 target 'fanthus_base_lib_Example' do
   pod 'fanthus_base_lib', :path => '../'
 
-  target 'fanthus_base_lib_Tests' do
-    inherit! :search_paths
+#  target 'fanthus_base_lib_Tests' do
+#    inherit! :search_paths
 
+    pod 'HexColors'
+    pod 'SnapKit'
+    pod 'Toaster'
+    pod 'CocoaLumberjack/Swift'
     
-  end
+#  end
 end

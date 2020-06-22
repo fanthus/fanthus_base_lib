@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		038119E9468E2356C71BB352 /* Pods_fanthus_base_lib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936F5668D7B83D621F6769E3 /* Pods_fanthus_base_lib_Example.framework */; };
+		29C6B0707AB2033A6B6ED73F /* Pods_fanthus_base_lib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9013CE0BA02159CA576FB76 /* Pods_fanthus_base_lib_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		D12AB86DDD17F398B49188CA /* Pods_fanthus_base_lib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3D92C052B1209003BF2BF6 /* Pods_fanthus_base_lib_Tests.framework */; };
+		F5AC5AB524A0F93200FE1F5D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = F5AC5AB124A0F93200FE1F5D /* .gitkeep */; };
+		F5AC5AC524A0F94900FE1F5D /* CoreGraphicsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AB924A0F94900FE1F5D /* CoreGraphicsUtils.swift */; };
+		F5AC5AC624A0F94900FE1F5D /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5ABA24A0F94900FE1F5D /* LogUtils.swift */; };
+		F5AC5AC724A0F94900FE1F5D /* EZUI+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5ABB24A0F94900FE1F5D /* EZUI+Config.swift */; };
+		F5AC5AC824A0F94900FE1F5D /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5ABD24A0F94900FE1F5D /* NSAttributedString+Extension.swift */; };
+		F5AC5AC924A0F94900FE1F5D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5ABE24A0F94900FE1F5D /* UIView+Extension.swift */; };
+		F5AC5ACA24A0F94900FE1F5D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5ABF24A0F94900FE1F5D /* UIImage+Extension.swift */; };
+		F5AC5ACB24A0F94900FE1F5D /* Device+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC024A0F94900FE1F5D /* Device+Extension.swift */; };
+		F5AC5ACC24A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC124A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift */; };
+		F5AC5ACD24A0F94900FE1F5D /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC224A0F94900FE1F5D /* UIScreen+Extension.swift */; };
+		F5AC5ACE24A0F94900FE1F5D /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC324A0F94900FE1F5D /* UIBezierPath+Extension.swift */; };
+		F5AC5AD424A0FB7A00FE1F5D /* EZUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC424A0F94900FE1F5D /* EZUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +38,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F5AC5AD224A0FA1800FE1F5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0B22C8C220310D3BB187ABB9 /* Pods-fanthus_base_lib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanthus_base_lib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-fanthus_base_lib_Tests/Pods-fanthus_base_lib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		24D91216FC3DAF5C93095CC1 /* Pods-fanthus_base_lib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanthus_base_lib_Example.release.xcconfig"; path = "Target Support Files/Pods-fanthus_base_lib_Example/Pods-fanthus_base_lib_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4164E4B5C6FD1B81E1E4859C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4164E4B5C6FD1B81E1E4859C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* fanthus_base_lib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fanthus_base_lib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +64,22 @@
 		607FACE51AFB9204008FA782 /* fanthus_base_lib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fanthus_base_lib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6F3D92C052B1209003BF2BF6 /* Pods_fanthus_base_lib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanthus_base_lib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0F770177AE589FF44F5D84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		936F5668D7B83D621F6769E3 /* Pods_fanthus_base_lib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanthus_base_lib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A24FB8553626A0201ECFCCA6 /* Pods-fanthus_base_lib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanthus_base_lib_Tests.release.xcconfig"; path = "Target Support Files/Pods-fanthus_base_lib_Tests/Pods-fanthus_base_lib_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B83019E6A8D662942FC85884 /* fanthus_base_lib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = fanthus_base_lib.podspec; path = ../fanthus_base_lib.podspec; sourceTree = "<group>"; };
+		7B0F770177AE589FF44F5D84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B83019E6A8D662942FC85884 /* fanthus_base_lib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = fanthus_base_lib.podspec; path = ../fanthus_base_lib.podspec; sourceTree = "<group>"; };
+		E9013CE0BA02159CA576FB76 /* Pods_fanthus_base_lib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fanthus_base_lib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF8273D54A4ADBCACD0B52D7 /* Pods-fanthus_base_lib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanthus_base_lib_Example.debug.xcconfig"; path = "Target Support Files/Pods-fanthus_base_lib_Example/Pods-fanthus_base_lib_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5AC5AB124A0F93200FE1F5D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		F5AC5AB924A0F94900FE1F5D /* CoreGraphicsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsUtils.swift; sourceTree = "<group>"; };
+		F5AC5ABA24A0F94900FE1F5D /* LogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		F5AC5ABB24A0F94900FE1F5D /* EZUI+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EZUI+Config.swift"; sourceTree = "<group>"; };
+		F5AC5ABD24A0F94900FE1F5D /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5ABE24A0F94900FE1F5D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5ABF24A0F94900FE1F5D /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5AC024A0F94900FE1F5D /* Device+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5AC124A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5AC224A0F94900FE1F5D /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5AC324A0F94900FE1F5D /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
+		F5AC5AC424A0F94900FE1F5D /* EZUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				038119E9468E2356C71BB352 /* Pods_fanthus_base_lib_Example.framework in Frameworks */,
+				29C6B0707AB2033A6B6ED73F /* Pods_fanthus_base_lib_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12AB86DDD17F398B49188CA /* Pods_fanthus_base_lib_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +106,7 @@
 			children = (
 				EF8273D54A4ADBCACD0B52D7 /* Pods-fanthus_base_lib_Example.debug.xcconfig */,
 				24D91216FC3DAF5C93095CC1 /* Pods-fanthus_base_lib_Example.release.xcconfig */,
-				0B22C8C220310D3BB187ABB9 /* Pods-fanthus_base_lib_Tests.debug.xcconfig */,
-				A24FB8553626A0201ECFCCA6 /* Pods-fanthus_base_lib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +136,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				F5AC5AB024A0F93200FE1F5D /* Assets */,
+				F5AC5AB224A0F93200FE1F5D /* Classes */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -154,10 +185,53 @@
 		E09F607159F84EEB4B617F44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				936F5668D7B83D621F6769E3 /* Pods_fanthus_base_lib_Example.framework */,
-				6F3D92C052B1209003BF2BF6 /* Pods_fanthus_base_lib_Tests.framework */,
+				E9013CE0BA02159CA576FB76 /* Pods_fanthus_base_lib_Example.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5AC5AB024A0F93200FE1F5D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC5AB124A0F93200FE1F5D /* .gitkeep */,
+			);
+			name = Assets;
+			path = ../../fanthus_base_lib/Assets;
+			sourceTree = "<group>";
+		};
+		F5AC5AB224A0F93200FE1F5D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC5ABC24A0F94900FE1F5D /* extensions */,
+				F5AC5AC424A0F94900FE1F5D /* EZUI.swift */,
+				F5AC5ABB24A0F94900FE1F5D /* EZUI+Config.swift */,
+				F5AC5AB824A0F94900FE1F5D /* utils */,
+			);
+			name = Classes;
+			path = ../../fanthus_base_lib/Classes;
+			sourceTree = "<group>";
+		};
+		F5AC5AB824A0F94900FE1F5D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC5AB924A0F94900FE1F5D /* CoreGraphicsUtils.swift */,
+				F5AC5ABA24A0F94900FE1F5D /* LogUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F5AC5ABC24A0F94900FE1F5D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC5ABD24A0F94900FE1F5D /* NSAttributedString+Extension.swift */,
+				F5AC5ABE24A0F94900FE1F5D /* UIView+Extension.swift */,
+				F5AC5ABF24A0F94900FE1F5D /* UIImage+Extension.swift */,
+				F5AC5AC024A0F94900FE1F5D /* Device+Extension.swift */,
+				F5AC5AC124A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift */,
+				F5AC5AC224A0F94900FE1F5D /* UIScreen+Extension.swift */,
+				F5AC5AC324A0F94900FE1F5D /* UIBezierPath+Extension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +246,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				20E8ACE67F2076EFE60595D6 /* [CP] Embed Pods Frameworks */,
+				F5AC5AD224A0FA1800FE1F5D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,7 +261,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "fanthus_base_lib_Tests" */;
 			buildPhases = (
-				8DB0003B89612FB872B1ACAF /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -213,10 +287,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7PLGSDP5AT;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7PLGSDP5AT;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +303,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -249,6 +326,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				F5AC5AB524A0F93200FE1F5D /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,37 +369,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-fanthus_base_lib_Example/Pods-fanthus_base_lib_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 				"${BUILT_PRODUCTS_DIR}/fanthus_base_lib/fanthus_base_lib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fanthus_base_lib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fanthus_base_lib_Example/Pods-fanthus_base_lib_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8DB0003B89612FB872B1ACAF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-fanthus_base_lib_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -331,8 +395,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AC5AC724A0F94900FE1F5D /* EZUI+Config.swift in Sources */,
+				F5AC5ACE24A0F94900FE1F5D /* UIBezierPath+Extension.swift in Sources */,
+				F5AC5ACB24A0F94900FE1F5D /* Device+Extension.swift in Sources */,
+				F5AC5AC624A0F94900FE1F5D /* LogUtils.swift in Sources */,
+				F5AC5AC924A0F94900FE1F5D /* UIView+Extension.swift in Sources */,
+				F5AC5ACA24A0F94900FE1F5D /* UIImage+Extension.swift in Sources */,
+				F5AC5ACD24A0F94900FE1F5D /* UIScreen+Extension.swift in Sources */,
+				F5AC5ACC24A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift in Sources */,
+				F5AC5AC524A0F94900FE1F5D /* CoreGraphicsUtils.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				F5AC5AD424A0FB7A00FE1F5D /* EZUI.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F5AC5AC824A0F94900FE1F5D /* NSAttributedString+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +553,9 @@
 			baseConfigurationReference = EF8273D54A4ADBCACD0B52D7 /* Pods-fanthus_base_lib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7PLGSDP5AT;
 				INFOPLIST_FILE = fanthus_base_lib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +570,9 @@
 			baseConfigurationReference = 24D91216FC3DAF5C93095CC1 /* Pods-fanthus_base_lib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7PLGSDP5AT;
 				INFOPLIST_FILE = fanthus_base_lib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -505,8 +584,8 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B22C8C220310D3BB187ABB9 /* Pods-fanthus_base_lib_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7PLGSDP5AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,8 +606,8 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A24FB8553626A0201ECFCCA6 /* Pods-fanthus_base_lib_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7PLGSDP5AT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

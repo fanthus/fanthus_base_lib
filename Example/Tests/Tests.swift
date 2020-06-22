@@ -1,5 +1,5 @@
 import XCTest
-import fanthus_base_lib
+//import fanthus_base_lib
 
 class Tests: XCTestCase {
     
