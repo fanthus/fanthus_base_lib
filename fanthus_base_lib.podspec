@@ -21,14 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/fanxiushan@gmail.com/fanthus_base_lib'
+  s.homepage         = 'https://github.com/fanthus/fanthus_base_lib.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fanxiushan@gmail.com' => 'fanxiushan@soullink.com.cn' }
-  s.source           = { :git => 'https://github.com/fanxiushan@gmail.com/fanthus_base_lib.git', :tag => s.version.to_s }
+  s.author           = { 'fanxiushan@gmail.com' => 'fanxiushan@gmail.com' }
+  s.source           = { :git => 'https://github.com/fanthus/fanthus_base_lib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'fanthus_base_lib/Classes/**/*'
   
