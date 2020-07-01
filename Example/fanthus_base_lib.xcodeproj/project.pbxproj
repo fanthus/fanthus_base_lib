@@ -26,6 +26,8 @@
 		F5AC5ACD24A0F94900FE1F5D /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC224A0F94900FE1F5D /* UIScreen+Extension.swift */; };
 		F5AC5ACE24A0F94900FE1F5D /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC324A0F94900FE1F5D /* UIBezierPath+Extension.swift */; };
 		F5AC5AD424A0FB7A00FE1F5D /* EZUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC5AC424A0F94900FE1F5D /* EZUI.swift */; };
+		F5B664DC24AC3609009FB912 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B664DB24AC3609009FB912 /* TestView.swift */; };
+		F5B664DE24AC3745009FB912 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B664DD24AC3745009FB912 /* CGRect+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		F5AC5AC224A0F94900FE1F5D /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		F5AC5AC324A0F94900FE1F5D /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
 		F5AC5AC424A0F94900FE1F5D /* EZUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZUI.swift; sourceTree = "<group>"; };
+		F5B664DB24AC3609009FB912 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		F5B664DD24AC3745009FB912 /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				F5B664DB24AC3609009FB912 /* TestView.swift */,
 				F5AC5AB024A0F93200FE1F5D /* Assets */,
 				F5AC5AB224A0F93200FE1F5D /* Classes */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -230,6 +235,7 @@
 				F5AC5AC124A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift */,
 				F5AC5AC224A0F94900FE1F5D /* UIScreen+Extension.swift */,
 				F5AC5AC324A0F94900FE1F5D /* UIBezierPath+Extension.swift */,
+				F5B664DD24AC3745009FB912 /* CGRect+Extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -395,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B664DC24AC3609009FB912 /* TestView.swift in Sources */,
 				F5AC5AC724A0F94900FE1F5D /* EZUI+Config.swift in Sources */,
 				F5AC5ACE24A0F94900FE1F5D /* UIBezierPath+Extension.swift in Sources */,
 				F5AC5ACB24A0F94900FE1F5D /* Device+Extension.swift in Sources */,
@@ -403,6 +410,7 @@
 				F5AC5ACA24A0F94900FE1F5D /* UIImage+Extension.swift in Sources */,
 				F5AC5ACD24A0F94900FE1F5D /* UIScreen+Extension.swift in Sources */,
 				F5AC5ACC24A0F94900FE1F5D /* NSMutableAttributedString+Extension.swift in Sources */,
+				F5B664DE24AC3745009FB912 /* CGRect+Extension.swift in Sources */,
 				F5AC5AC524A0F94900FE1F5D /* CoreGraphicsUtils.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				F5AC5AD424A0FB7A00FE1F5D /* EZUI.swift in Sources */,

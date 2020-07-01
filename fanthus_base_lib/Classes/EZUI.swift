@@ -159,7 +159,7 @@ public class EZUI:NSObject {
     }
     
     
-    public static func addChildView(_ view:UIView?,_ superView:UIView?=nil,_ closure:ezui_snp_t=nil) -> UIView? {
+    public static func addChildView<T:UIView>(_ view:T?,_ superView:UIView?=nil,_ closure:ezui_snp_t=nil) -> T? {
         if let v = view {
             superView?.addSubview(v)
             if let c = closure {
@@ -170,7 +170,7 @@ public class EZUI:NSObject {
     }
     
     public static func layout<T:UIView>(_ child:T?,_ superView:UIView?=nil,_ closure:ezui_snp_t=nil) -> T? {
-        return EZUI.addChildView(child,superView,closure) as? T
+        return EZUI.addChildView(child,superView,closure)
     }
     
     public static func attachTo<T:UIView>(_ view:T?,_ superView:UIView?=nil,_ closure:ezui_snp_t=nil)->T? {
@@ -187,7 +187,7 @@ public class EZUI:NSObject {
     public static func label(txt:String?="",color:String=_$.TXT_COLOR,fontName:EZUI_Fonts = .Regular,size:CGFloat=_$.TXT_SIZE,align:NSTextAlignment = .center,superView:UIView?=nil,lineNum:Int=0,_ closure:ezui_snp_t=nil) -> UILabel {
         let lab = UILabel()
         lab.textColor = UIColor(color)
-        let font = fontName != nil ? UIFont.init(name: fontName.rawValue, size: size) : UIFont.systemFont(ofSize: size)
+        let font = UIFont.init(name: fontName.rawValue, size: size)
         lab.font = font
         lab.textAlignment = align
         lab.text = txt
@@ -209,7 +209,7 @@ public class EZUI:NSObject {
             }
         }
         if imgName != nil {
-            var ori = UIImage(named: imgName!)
+            let ori = UIImage(named: imgName!)
             if ori != nil && stretchXPercent != nil && stretchYPercent != nil {
                 img.image = ori!.stretchableImage(withLeftCapWidth: Int(ori!.size.width * stretchXPercent!), topCapHeight: Int(ori!.size.width * stretchYPercent!))
             } else {
@@ -267,11 +267,7 @@ public class EZUI:NSObject {
     }
     
     public static func formatText(target:UITextView?,txt:String?="",color:String=_$.TXT_COLOR,fontName:EZUI_Fonts = .Regular,size:CGFloat=_$.TXT_SIZE,bgColor:String?=nil) {
-        if(fontName != nil) {
-            target?.font = UIFont.init(name: fontName.rawValue, size: size)
-        } else {
-            target?.font = UIFont.systemFont(ofSize: size)
-        }
+        target?.font = UIFont.init(name: fontName.rawValue, size: size)
         target?.text = txt
         target?.textColor = UIColor(color)
         if let bg = bgColor {
