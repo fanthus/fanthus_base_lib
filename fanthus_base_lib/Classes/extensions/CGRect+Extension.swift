@@ -9,7 +9,7 @@
 import Foundation
 import CoreGraphics
 
-extension CGRect {
+public extension CGRect {
     
     var upLeft:CGPoint {
         get { return CGPoint.init(x: self.origin.x, y: self.origin.y) }
