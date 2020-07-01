@@ -11,6 +11,11 @@ import CoreGraphics
 
 public extension CGRect {
     
+    var center:CGPoint {
+        get { return CGPoint.init(x: self.origin.x + self.width/CGFloat(2.0), y: self.origin.y + self.height/CGFloat(2.0)) }
+        set { self = CGRect.init(x: newValue.x - self.width/CGFloat(2.0), y: newValue.y - self.height/CGFloat(2.0), width: self.width, height: self.height) }
+    }
+    
     var upLeft:CGPoint {
         get { return CGPoint.init(x: self.origin.x, y: self.origin.y) }
         set { self = CGRect.init(x: newValue.x, y: newValue.y, width: self.width, height: self.height) }
