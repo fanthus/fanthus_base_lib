@@ -32,11 +32,25 @@ pod 'fanthus_base_lib'
 
 然后在使用侧的 podfile 里更新对应的 tag 为 0.0.4，如下
 
-```
+```ruby
 pod 'fanthus_base_lib', :git => "git@github.com:fanthus/fanthus_base_lib.git", :tag => '0.0.4'
 ```
 
 执行 pod install 则在使用侧就能用到更改后的 tag 了.
+
+如果不小心推送错误了，想要删掉本地和远程的 tag 可以使用下面的命令
+
+```shell
+# delete local tag '12345'
+git tag -d 12345
+# delete remote tag '12345' (eg, GitHub version too)
+git push origin :refs/tags/12345
+# alternative approach
+git push --delete origin tagName
+git tag -d tagName
+```
+
+
 
 ## Author
 
