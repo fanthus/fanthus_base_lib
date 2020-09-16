@@ -1,15 +1,31 @@
 use_frameworks!
 
 target 'fanthus_base_lib_Example' do
-  pod 'fanthus_base_lib', :path => '../'
+  # pod 'fanthus_base_lib', :path => '../'
 
 #  target 'fanthus_base_lib_Tests' do
 #    inherit! :search_paths
 
     pod 'HexColors'
     pod 'SnapKit'
-    pod 'Toaster'
     pod 'CocoaLumberjack/Swift'
+
+    post_install do |installer|
+  	installer.pods_project.targets.each do |target|
+    swift_version = nil
+    target.build_configurations.each do |config|
+        print "pod target name #{target.name}, config #{config.name}\n"
+        if [].include?(target.name)
+          print "set pod #{target.name} swift version to 5.0\n"
+          config.build_settings['SWIFT_VERSION'] = '5.0'
+        end
+        if  ['HexColors'].include?(target.name)
+          print "set pod #{target.name} swift version to 4.0\n"
+          config.build_settings['SWIFT_VERSION'] = '4.0'
+        end
+      end
+  end
+end
     
 #  end
 end

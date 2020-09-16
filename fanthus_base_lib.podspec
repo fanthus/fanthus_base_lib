@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'fanthus_base_lib'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'A short description of fanthus_base_lib.'
 
 # This description is used to generate tags and improve search results.
@@ -42,7 +42,6 @@ TODO: Add long description of the pod here.
     
   s.dependency "HexColors"
   s.dependency "SnapKit"
-  s.dependency "Toaster"
   s.dependency "CocoaLumberjack/Swift"
 
 end

@@ -9,7 +9,6 @@
 import UIKit
 import HexColors
 import SnapKit
-import Toaster
 
 public typealias _$ = EZUI_Config
 public typealias ezui_vv_t = ()->Void           // Void->Void => vv
