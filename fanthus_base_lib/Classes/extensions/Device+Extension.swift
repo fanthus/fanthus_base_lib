@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SystemConfiguration.CaptiveNetwork
 
 public extension UIDevice {
     
@@ -15,6 +16,9 @@ public extension UIDevice {
     static let isIphoneX: Bool = {
         return UIDevice.modelName.contains("iPhone X")
     }()
+    
+    static let scale:CGFloat = UIScreen.main.scale
+    static let isPhoneX = isBezelLessDisplay
     
     // 是否是全面屏 iPhone
     // discussion:
@@ -121,4 +125,28 @@ public extension UIDevice {
     static let osVerStr:String = {
         return UIDevice.current.systemVersion
     }()
+    
+    static let ssidStr:String? = {
+        let interfaces = CNCopySupportedInterfaces()
+        if interfaces != nil {
+            let interfacesArray = CFBridgingRetain(interfaces) as! Array<AnyObject>
+            if interfacesArray.count > 0 {
+                let interfaceName = interfacesArray[0] as! CFString
+                let ussafeInterfaceData = CNCopyCurrentNetworkInfo(interfaceName)
+                if (ussafeInterfaceData != nil) {
+                    let interfaceData = ussafeInterfaceData as! Dictionary<String, Any>
+                    return interfaceData["SSID"]! as? String
+                }
+            }
+        }
+        return nil
+    }()
+    
+    //MARK:微震
+    static func backGenertor() {
+        if #available(iOS 10.0, *) {
+            let feedBackGenertor = UIImpactFeedbackGenerator.init(style: .medium)
+            feedBackGenertor.impactOccurred()
+        }
+    }
 }

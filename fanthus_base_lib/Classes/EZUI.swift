@@ -10,11 +10,6 @@ import UIKit
 import HexColors
 import SnapKit
 
-public typealias _$ = EZUI_Config
-public typealias ezui_vv_t = ()->Void           // Void->Void => vv
-public typealias ezui_bv_t = (_ b:Bool) -> Void // bool->Void
-public typealias ezui_snp_t = ((_ make: ConstraintMaker) -> Void)?  // snap kit make
-
 public class EZUI:NSObject {
     
     public static func buttonCustom(txt:String="",txtInset:UIEdgeInsets?=nil,color:String=_$.TXT_COLOR,font:EZUI_Fonts = .Regular,size:CGFloat=_$.TXT_SIZE,bgColor:String?=nil,img:String? = nil,imgEdgeInsets:UIEdgeInsets? = nil,bgImg:String?=nil,radius:CGFloat? = nil,superView:UIView?=nil,_ closure:ezui_snp_t=nil)->UIButton {
@@ -201,6 +196,7 @@ public class EZUI:NSObject {
     @discardableResult
     public static func imageView(imgName:String?, superView:UIView?=nil,_ w:CGFloat? = nil,_ h:CGFloat? = nil,_ mask:String? = nil,stretchXPercent:CGFloat?=nil,stretchYPercent:CGFloat?=nil, _ closure:ezui_snp_t=nil) -> UIImageView {
         let img = UIImageView()
+        img.contentMode = .scaleAspectFill
         if w != nil && h != nil {
             img.frame.size = CGSize(width: w!, height: h!)
             if mask != nil {
