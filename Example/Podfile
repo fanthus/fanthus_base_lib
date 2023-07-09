@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '11.0'
 
 target 'fanthus_base_lib_Example' do
   # pod 'fanthus_base_lib', :path => '../'
@@ -15,6 +16,7 @@ target 'fanthus_base_lib_Example' do
     swift_version = nil
     target.build_configurations.each do |config|
         print "pod target name #{target.name}, config #{config.name}\n"
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
         if [].include?(target.name)
           print "set pod #{target.name} swift version to 5.0\n"
           config.build_settings['SWIFT_VERSION'] = '5.0'
